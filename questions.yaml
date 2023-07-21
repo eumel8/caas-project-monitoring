@@ -3,63 +3,63 @@ categories:
 questions:
   - variable: kube-prometheus-stack.grafana.enabled
     default: "true"
-    description: Enable Grafana
+    description: Enable grafana
     type: boolean
-    label: Grafana Enabled
-    group: Grafana
+    label: grafana Enabled
+    group: grafana
     show_subquestion_if: true
     subquestions:
       - variable: kube-prometheus-stack.grafana.sidecar.dashboards.searchNamespace
         description: Namespaces list. If specified, the sidecar will search for dashboards config-maps inside these namespaces. Otherwise the namespace in which the sidecar is running will be used.
         type: string
-        label: Grafana view namespaces (by comma)
-        group: Grafana
+        label: grafana view namespaces (by comma)
+        group: grafana
       - variable: kube-prometheus-stack.grafana.image.repository
-        description: Repository of Grafana Image
+        description: Repository of grafana Image
         type: string
-        label: Grafana Image Repo
-        group: Grafana
+        label: grafana Image Repo
+        group: grafana
       - variable: kube-prometheus-stack.grafana.image.tag
-        description: Tag of Grafana Image
+        description: Tag of grafana Image
         type: string
-        label: Grafana Image Tag
-        group: Grafana
+        label: grafana Image Tag
+        group: grafana
       - variable: kube-prometheus-stack.grafana.resources.requests.memory
-        description: Memory Requests Grafana
+        description: Memory Requests grafana
         type: string
-        label: Grafana Memory Requests
-        group: Grafana
+        label: grafana Memory Requests
+        group: grafana
       - variable: kube-prometheus-stack.grafana.resources.requests.cpu
-        description: CPU Requests Grafana
+        description: CPU Requests grafana
         type: string
-        label: Grafana Memory Requests
-        group: Grafana
+        label: grafana Memory Requests
+        group: grafana
       - variable: kube-prometheus-stack.grafana.resources.limits.memory
-        description: Memory Limits Grafana
+        description: Memory Limits grafana
         type: string
-        label: Grafana Memory Requests
-        group: Grafana
+        label: grafana Memory Requests
+        group: grafana
       - variable: kube-prometheus-stack.grafana.resources.limits.cpu
-        description: CPU limits Grafana
+        description: CPU limits grafana
         type: string
-        label: Grafana CPU Limits
-        group: Grafana
+        label: grafana CPU Limits
+        group: grafana
       - variable: kube-prometheus-stack.grafana.defaultDashboardsTimezone
-        description: Grafana dashboard timezone
+        description: grafana dashboard timezone
         type: string
-        label: Grafana dashboard timezone
-        group: Grafana
+        label: grafana dashboard timezone
+        group: grafana
       - variable: kube-prometheus-stack.grafana."grafana.ini".log.level
-        description: Loglevel Grafana
+        description: Loglevel grafana
         type: enum
-        label: Loglevel Grafana
+        label: Loglevel grafana
         options:
           - info
           - error
           - debug
-        group: Grafana
+        group: grafana
       - variable: kube-prometheus-stack.grafana.adminPassword
-        description: Grafana admin password
+        description: grafana admin password
         type: string
-        label: Grafana admin password
-        group: Grafana
+        label: grafana admin password
+        group: grafana
