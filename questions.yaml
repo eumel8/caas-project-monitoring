@@ -1,7 +1,7 @@
 categories:
   - monitoring
 questions:
-  - variable: kube-prometheus-stack.grafana.enabled
+  - variable: hiller.grafana.enabled
     default: "true"
     description: Enable grafana
     type: boolean
@@ -9,16 +9,16 @@ questions:
     group: grafana
     show_subquestion_if: true
     subquestions:
-      - variable: kube-prometheus-stack.grafana.defaultDashboardsTimezone
+      - variable: hiller.grafana.defaultDashboardsTimezone
         description: grafana dashboard timezone
         type: string
         label: grafana dashboard timezone
-      - variable: kube-prometheus-stack.grafana.repository
+      - variable: hiller.grafana.repository
         description: Repository of grafana Image
         type: string
         label: grafana Image Repo
         group: grafana
-      - variable: kube-prometheus-stack.grafana.tag
+      - variable: hiller.grafana.tag
         description: Tag of grafana Image
         type: string
         label: grafana Image Tag
