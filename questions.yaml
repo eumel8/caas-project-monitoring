@@ -9,11 +9,6 @@ questions:
     group: grafana
     show_subquestion_if: true
     subquestions:
-      - variable: kube-prometheus-stack.grafana.sidecar.dashboards.searchNamespace
-        description: Namespaces list. If specified, the sidecar will search for dashboards config-maps inside these namespaces. Otherwise the namespace in which the sidecar is running will be used.
-        type: string
-        label: grafana view namespaces (by comma)
-        group: grafana
       - variable: kube-prometheus-stack.grafana.image.repository
         description: Repository of grafana Image
         type: string
