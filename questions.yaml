@@ -24,7 +24,7 @@ questions:
         label: grafana Image Tag
         group: grafana
         group: grafana
-  - variable: ha.enabled
+  - variable: ha.b.enabled
     default: "true"
     description: Enable HA
     type: boolean
@@ -32,7 +32,7 @@ questions:
     group: demoapp
     show_subquestion_if: true
     subquestions:
-      - variable: ha.replicaCount
+      - variable: ha.b.replicaCount
         description: Replica Count of PODs
         type: string
         label: ha replicacount
