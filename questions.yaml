@@ -63,3 +63,17 @@ questions:
         type: string
         label: grafana admin password
         group: grafana
+  - variable: ha.enabled
+    default: "true"
+    description: Enable HA
+    type: boolean
+    label: ha enabled
+    group: demoapp
+    show_subquestion_if: true
+    subquestions:
+      - variable: ha.replicaCount
+        description: Replica Count of PODs
+        type: string
+        label: ha replicacount
+        group: demoapp
+        default: 3
